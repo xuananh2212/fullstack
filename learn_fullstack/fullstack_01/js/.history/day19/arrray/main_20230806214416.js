@@ -1,0 +1,47 @@
+//  mảng có 1 hàm tạo tên Array.
+
+// duyệt mảng bằng for , for in => duyệt index, for of = > duyet gia tri.
+
+// for (let i in array) {
+//   console.log(array[i]);
+// }
+
+// xoá phần tử trong mảng theo index.
+
+// var result = [1, 2, 3, 4, 5, 6];
+
+// for (var i in array) {
+
+//  }
+
+console.log(Array.prototype);
+let array = [11, 22, 32, 11, 41, 52, 61];
+console.log(array.at(0));
+
+// concat(arr2, arr3, ...) =>  nối mảng. không thay đổi mảng ban đầu.
+
+console.log(array.concat([1, 2, 3], [4, 5, 6]));
+
+// them pt vao mang dung concat.
+console.log(array.concat("quan", "tuan anh"));
+
+// indexOf(value) => tìm vị trí xuất hiện đầu tiên của pt trong mảng .trả về giá trị index không tìm thấy trả về -1
+
+// 4.lastIndexOf(value) => tìm vị trí cuối cùng.
+
+console.log(array.lastIndexOf(11));
+
+// 5. includes(value) => trả về giá trị true nếu tìm thấy, ngược lại false.
+
+// 6. slice(start, end) => cắt mảng từ giá trị index [start, end-1];
+
+console.log(array.slice(0, 2));
+
+// 7. join(values) => nối các phần tử mảng thành chuỗi.
+
+console.log(array.join(" "));
+
+//
+var str = "ta hang an";
+var arrayStr = str.split(" ");
+console.log(arrayStr[array.length - 1]);

@@ -1,0 +1,10 @@
+@mixin size($a, $b) {
+  width: $a;
+  height: $b;
+}
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

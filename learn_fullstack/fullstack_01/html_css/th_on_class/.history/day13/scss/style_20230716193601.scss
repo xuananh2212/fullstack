@@ -1,0 +1,25 @@
+@import "./mixin";
+
+.primary-heading {
+  color: red;
+  font-size: 18px;
+}
+
+.primary-heading-lv2 {
+  @extend .primary-heading;
+  padding: 18px;
+}
+.box-1 {
+  @include size(50px, 50px);
+  background-color: green;
+}
+
+.box {
+  @include size(100px, 100px);
+  @include flexCenter;
+  background-color: red;
+}
+
+.box-2 {
+  @include size;
+}

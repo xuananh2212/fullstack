@@ -1,0 +1,77 @@
+// $sizes: 0, 25, 50, 75, 100;
+
+// @each $size in $sizes {
+//   .w-#{size} {
+//     @if ($size == 0) {
+//       width: $size;
+//     } @else {
+//       width: $size * 1%;
+//     }
+//   }
+// }
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-items-end {
+  align-items: flex-end;
+}
+
+$sizes: (start, justify-content, flex-start), (center, justify-content, center),
+  (end, justify-content, flex-end), (start, align-items, flex-start),
+  (center, align-items, center), (end, align-items, end);
+
+@each $name, $selector, $values in $sizes {
+  .#{$selector}-#{$name} {
+    #{$selector}: #{$values};
+  }
+}
+
+.header {
+  .main {
+    @media screen and (max-width: 787px) {
+      padding: 0px;
+    }
+  }
+}
+
+$breakpoints: (
+  col: 0,
+  sm: 576,
+  md: 768,
+  lg: 992,
+  xl: 1200,
+  xxl: 1400,
+);
+
+@each $name, $breakpoint in $breakpoints {
+  @if ($breakpoint < 576) {
+    @for $i from 1 through 12 {
+      .col-#{$i} {
+        --column-number: #{$i};
+      }
+    }
+  } @else {
+    @media screen and (min-width: #{$breakpoint}px) {
+      @for $i from 1 through 12 {
+        .col-#{$name}-#{i} {
+          --column-number: #{$i};
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .products {
+            position: relative;
+            width: 300px;
+            margin: auto;
+        }
+        img{
+            display: block;
+            width: 100%;
+        }
+        span{
+            bottom: 0;
+            right: 0;
+            position: absolute;
+             background: red;
+             padding: 5px 12px;
+             border-radius: 12px;
+        }
+        .img-block{
+            position: relative;
+        }
+
+        .overlay{
+            display: none;
+            position: absolute;
+            inset: 0;
+            background: #333333b1;
+        }
+        .products:hover .overlay{
+            display: block;
+            
+        }
+        .products-info{
+            position: relative;
+            z-index: 1;
+        }
+        .products:hover .products-info{
+            color: #fff;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="products">
+       <div class="img-block">
+            <img src="https://fastly.picsum.photos/id/5/200/200.jpg?hmac=oN9VtXdJYLSFssji8vCr48JaI-e5Zi4eH9GAiYBB_Ig"
+                alt="">
+                <span>-30%</span>
+       </div>
+        <div class="products-info">
+            <h2>San phan 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem molestias mollitia quis ab sunt, fuga id
+                eligendi quod voluptates delectus eius itaque consectetur officia est assumenda ad ipsa quos unde!</p>
+        </div>
+
+        <div class="overlay"></div>
+
+    </div>
+
+</body>
+
+</html>

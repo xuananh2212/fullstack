@@ -1,0 +1,1 @@
+margin-top , margin-bottom , padding- top , padding - bottom : nếu đặt kích thước la %  thì thấy theo kích thước content của thẻ cha chứa nó

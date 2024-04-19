@@ -1,0 +1,16 @@
+@import "./mixin";
+
+.primary-heading {
+  color: red;
+  font-size: 18px;
+}
+
+.primary-heading-lv2 {
+  @extend .primary-heading;
+  padding: 18px;
+}
+
+.box {
+  @include size;
+  background-color: red;
+}

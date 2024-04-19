@@ -1,0 +1,12 @@
+label:has(:checked) {
+    color: red;
+}
+
+ul li~li~li a {
+    color: red;
+}
+
+
+h1 + p {
+    color: red;
+}

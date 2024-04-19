@@ -1,0 +1,76 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="root">
+        <div class="root-inner"></div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chỉ cho nhập số nguyên</title>
+</head>
+
+<body>
+    <input type="text" id="integerInput" oninput="validateInput()">
+    <p id="errorMessage" style="color: red;"></p>
+
+    <script>
+        function validateInput() {
+            var inputElement = document.getElementById("integerInput");
+            var errorMessageElement = document.getElementById("errorMessage");
+            var inputValue = inputElement.value.trim();
+
+            // Kiểm tra xem giá trị nhập vào có phải là số nguyên không
+            if (/^\d+$/.test(inputValue)) {
+                errorMessageElement.textContent = ""; // Xóa thông báo lỗi
+            } else {
+                errorMessageElement.textContent = "Vui lòng nhập một số nguyên."; // Hiển thị thông báo lỗi
+            }
+        }
+    </script>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chỉ cho nhập số nguyên</title>
+</head>
+
+<body>
+    <input type="number" id="integerInput">
+    <p id="errorMessage" style="color: red;"></p>
+
+    <script>
+        document.getElementById("integerInput").addEventListener("input", function () {
+            var inputElement = this;
+            var errorMessageElement = document.getElementById("errorMessage");
+            var inputValue = inputElement.value.trim();
+
+            // Kiểm tra xem giá trị nhập vào có phải là số nguyên không
+            if (!inputValue || /^\d+$/.test(inputValue)) {
+                errorMessageElement.textContent = ""; // Xóa thông báo lỗi
+            } else {
+                errorMessageElement.textContent = "Vui lòng nhập một số nguyên."; // Hiển thị thông báo lỗi
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+.container {
+  .box {
+    color: red;
+  }
+}
+
+.box {
+  &__inner {
+    font-size: 16px;
+  }
+}
+
+.box {
+  > .box-1 {
+    color: red;
+  }
+}

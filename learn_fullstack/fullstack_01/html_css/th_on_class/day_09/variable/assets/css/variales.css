@@ -1,0 +1,4 @@
+h1{
+    --primary-color: rgb(209, 114, 114);
+    color: var(--primary-color);
+}

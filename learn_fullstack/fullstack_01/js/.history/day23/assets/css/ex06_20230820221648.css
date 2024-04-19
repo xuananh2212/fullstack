@@ -1,0 +1,97 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+select,
+textarea {
+    background-color: transparent;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.modal-box .overlay {
+    background-color: #0000009c;
+    position: fixed;
+    inset: 0;
+}
+
+.modal-box {
+    display: none;
+}
+
+.modal-box.show {
+    display: block;
+
+}
+
+.modal-box.show .modal {
+    top: 30px;
+}
+
+.modal-box.show .overlay {
+    display: block;
+}
+
+.modal-box .modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -100%;
+    z-index: 1;
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 15px;
+    transition: top .25s linear;
+}
+
+.modal-box .modal .modal-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+.modal-box .modal-header .close {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+
+.modal-box .modal .modal-body {
+    padding: 20px 0;
+}

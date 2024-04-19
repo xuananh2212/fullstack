@@ -1,0 +1,42 @@
+// $sizes: 0, 25, 50, 75, 100;
+
+// @each $size in $sizes {
+//   .w-#{size} {
+//     @if ($size == 0) {
+//       width: $size;
+//     } @else {
+//       width: $size * 1%;
+//     }
+//   }
+// }
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-items-end {
+  align-items: flex-end;
+}
+
+$size: (start, justify-content, flex-start), (center, justify-content, center),
+  (end, justify-content, flex-end), (start, align-items, flex-start),
+  (center, align-items, center), (end, align-items, end);
+
+@each $name, $selector, $values in $sizes {
+  .#{$selector}-#{$name} {
+    #{$selector}: #{$values};
+  }
+}

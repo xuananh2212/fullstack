@@ -1,0 +1,45 @@
+.col::before{
+    content: "hello ban"
+}
+
+.desc::first-line {
+    color: red;
+}
+
+.desc::first-letter{
+    color: blue
+}
+.desc::selection {
+    background-color: yellow;
+}
+
+input::placeholder{
+   color: red;
+   font-size : 15px;
+}
+
+
+div h2:not(.active){
+    color: red;
+}
+
+
+.products h2:first-child{
+    color: aqua;
+}
+
+.products h2:last-child {
+    color: aqua;
+}
+
+
+input:nth-of-type(1):checked ~ .content {
+     color: red;
+}
+
+input:nth-of-type(2):checked ~ .content {
+    color: blue;
+}
+input:nth-of-type(3):checked ~ .content {
+    color: yellow;
+}

@@ -1,0 +1,19 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+.header {
+  height: 150px;
+  &-inner {
+    display: flex;
+    align-items: center;
+    width: 1440px;
+    background: orange;
+    margin: 0 auto;
+  }
+}

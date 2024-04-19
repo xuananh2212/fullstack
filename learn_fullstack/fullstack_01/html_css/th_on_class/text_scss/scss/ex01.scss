@@ -1,0 +1,53 @@
+$textColor: green;
+// bien toan cuc
+$property: padding;
+
+$size: 18;
+$size: $size * 1px + 16px;
+
+.tilte {
+  color: $textColor;
+
+  #{$property}: 10px;
+
+  font-size: $size;
+}
+
+.header {
+  $padding: 10px; // bien cuc bo
+  .topbar {
+    padding: 10px 0;
+    .bar {
+      color: violet;
+    }
+  }
+  .topbar-left {
+    list-style: none;
+  }
+}
+
+.header {
+  ~ .box-1 {
+    border: 1px solid #fff;
+  }
+  @at-root .box-2 {
+    background-color: yellow;
+  }
+}
+
+.box {
+  .box-1 {
+    &:hover {
+      background-color: red;
+      &::after {
+        content: "";
+      }
+    }
+  }
+}
+
+.box {
+  .box-2 {
+    color: red;
+  }
+}

@@ -1,0 +1,45 @@
+@mixin size($a: 100px, $b: 100px) {
+  width: $a;
+  height: $b;
+}
+@mixin size-1($a: 100px, $b: $a) {
+  width: $a;
+  height: $b;
+}
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%flexCenterExtend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin grid($columns, $spaceing) {
+  row-gap: $spaceing;
+  margin-left: -$spaceing;
+  > * {
+    width: calc((100% / $columns) - $spaceing);
+    margin-left: $spaceing;
+    background-color: yellow;
+  }
+}
+
+@mixin screen($break-point) {
+  @if $break-point == mobile {
+    @media screen and(max-width: 575px) {
+      @content;
+    }
+  } @else if ($break-point == tablet) {
+    @media screen and(min-width: 575px) and () {
+      @content;
+    }
+  } @else if($break-point == pc) {
+    @media screen {
+    }
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        form:first-child {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div>
+            <label for="fullname" style="color:violet"> full name:</label>
+        </div>
+        <input type="text" name="fullname" id="fullname">
+        <div>
+            <label for="username"> username:</label>
+        </div>
+        <input type="text" name="username" id="username">
+        <div>
+            <label for="passwd"> password:</label>
+        </div>
+        <input type="password" name="passwd" id="passwd">
+        <div>
+            <label for="birthday"> birthday:</label>
+        </div>
+        <input type="date" name="date" id="date">
+
+        <div>
+            <label> gender:</label>
+            <label>
+                <input type="radio" name="gender" id="" checked>nam
+            </label>
+            <label>
+                <input type="radio" name="gender" id="">nu
+            </label>
+        </div>
+        <div>
+            <label> so thich:</label>
+            <label>
+                <input type="checkbox" name="fav" id="">ngu
+            </label>
+            <label>
+                <input type="checkbox" name="fav" id="">di choi
+            </label>
+        </div>
+        <div>
+            <label for="address">address:</label>
+            <select name="address" id="address">
+                <option value="1"> HA NOI</option>
+                <option value="2"> HCM</option>
+                <option value="3" selected> HAI PHONG</option>
+                <option value="4"> BAC GIANG</option>
+            </select>
+
+        </div>
+
+        <div>
+            <label for="sothich"> so thich</label>
+            <textarea name="sothich" id="" cols="30" rows="10"></textarea>
+
+        </div>
+
+        <button type="submit"> submit</button>
+
+
+
+    </form>
+
+
+
+</body>
+
+</html>

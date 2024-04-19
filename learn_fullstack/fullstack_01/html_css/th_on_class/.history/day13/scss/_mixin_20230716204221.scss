@@ -1,0 +1,30 @@
+@mixin size($a: 100px, $b: 100px) {
+  width: $a;
+  height: $b;
+}
+@mixin size-1($a: 100px, $b: $a) {
+  width: $a;
+  height: $b;
+}
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%flexCenterExtend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin grid($columns, $spaceing) {
+  row-gap: $spaceing;
+  margin-left: -$spaceing;
+  > * {
+    width: (100% / $columns) - $spaceing;
+    margin-left: $spaceing;
+    background-color: yellow;
+  }
+}

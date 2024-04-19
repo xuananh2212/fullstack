@@ -1,0 +1,294 @@
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-end {
+  align-items: end;
+}
+
+@media screen and (max-width: 787px) {
+  .header .main {
+    padding: 0px;
+  }
+}
+
+.col-1 {
+  --column-number: 1;
+}
+
+.col-2 {
+  --column-number: 2;
+}
+
+.col-3 {
+  --column-number: 3;
+}
+
+.col-4 {
+  --column-number: 4;
+}
+
+.col-5 {
+  --column-number: 5;
+}
+
+.col-6 {
+  --column-number: 6;
+}
+
+.col-7 {
+  --column-number: 7;
+}
+
+.col-8 {
+  --column-number: 8;
+}
+
+.col-9 {
+  --column-number: 9;
+}
+
+.col-10 {
+  --column-number: 10;
+}
+
+.col-11 {
+  --column-number: 11;
+}
+
+.col-12 {
+  --column-number: 12;
+}
+
+@media screen and (min-width: 576px) {
+  .col-sm-i {
+    --column-number: 1;
+  }
+  .col-sm-i {
+    --column-number: 2;
+  }
+  .col-sm-i {
+    --column-number: 3;
+  }
+  .col-sm-i {
+    --column-number: 4;
+  }
+  .col-sm-i {
+    --column-number: 5;
+  }
+  .col-sm-i {
+    --column-number: 6;
+  }
+  .col-sm-i {
+    --column-number: 7;
+  }
+  .col-sm-i {
+    --column-number: 8;
+  }
+  .col-sm-i {
+    --column-number: 9;
+  }
+  .col-sm-i {
+    --column-number: 10;
+  }
+  .col-sm-i {
+    --column-number: 11;
+  }
+  .col-sm-i {
+    --column-number: 12;
+  }
+}
+@media screen and (min-width: 768px) {
+  .col-md-i {
+    --column-number: 1;
+  }
+  .col-md-i {
+    --column-number: 2;
+  }
+  .col-md-i {
+    --column-number: 3;
+  }
+  .col-md-i {
+    --column-number: 4;
+  }
+  .col-md-i {
+    --column-number: 5;
+  }
+  .col-md-i {
+    --column-number: 6;
+  }
+  .col-md-i {
+    --column-number: 7;
+  }
+  .col-md-i {
+    --column-number: 8;
+  }
+  .col-md-i {
+    --column-number: 9;
+  }
+  .col-md-i {
+    --column-number: 10;
+  }
+  .col-md-i {
+    --column-number: 11;
+  }
+  .col-md-i {
+    --column-number: 12;
+  }
+}
+@media screen and (min-width: 992px) {
+  .col-lg-i {
+    --column-number: 1;
+  }
+  .col-lg-i {
+    --column-number: 2;
+  }
+  .col-lg-i {
+    --column-number: 3;
+  }
+  .col-lg-i {
+    --column-number: 4;
+  }
+  .col-lg-i {
+    --column-number: 5;
+  }
+  .col-lg-i {
+    --column-number: 6;
+  }
+  .col-lg-i {
+    --column-number: 7;
+  }
+  .col-lg-i {
+    --column-number: 8;
+  }
+  .col-lg-i {
+    --column-number: 9;
+  }
+  .col-lg-i {
+    --column-number: 10;
+  }
+  .col-lg-i {
+    --column-number: 11;
+  }
+  .col-lg-i {
+    --column-number: 12;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .col-xl-i {
+    --column-number: 1;
+  }
+  .col-xl-i {
+    --column-number: 2;
+  }
+  .col-xl-i {
+    --column-number: 3;
+  }
+  .col-xl-i {
+    --column-number: 4;
+  }
+  .col-xl-i {
+    --column-number: 5;
+  }
+  .col-xl-i {
+    --column-number: 6;
+  }
+  .col-xl-i {
+    --column-number: 7;
+  }
+  .col-xl-i {
+    --column-number: 8;
+  }
+  .col-xl-i {
+    --column-number: 9;
+  }
+  .col-xl-i {
+    --column-number: 10;
+  }
+  .col-xl-i {
+    --column-number: 11;
+  }
+  .col-xl-i {
+    --column-number: 12;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .col-xxl-i {
+    --column-number: 1;
+  }
+  .col-xxl-i {
+    --column-number: 2;
+  }
+  .col-xxl-i {
+    --column-number: 3;
+  }
+  .col-xxl-i {
+    --column-number: 4;
+  }
+  .col-xxl-i {
+    --column-number: 5;
+  }
+  .col-xxl-i {
+    --column-number: 6;
+  }
+  .col-xxl-i {
+    --column-number: 7;
+  }
+  .col-xxl-i {
+    --column-number: 8;
+  }
+  .col-xxl-i {
+    --column-number: 9;
+  }
+  .col-xxl-i {
+    --column-number: 10;
+  }
+  .col-xxl-i {
+    --column-number: 11;
+  }
+  .col-xxl-i {
+    --column-number: 12;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

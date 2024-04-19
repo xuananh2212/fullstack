@@ -1,0 +1,16 @@
+var $ = function (tag) {
+  return document.querySelector(tag);
+};
+
+var carousel = $(".carousel");
+var carouselInner = $(".carousel-inner");
+var carouselNav = $(".carousel-nav");
+var navNext = $(".next");
+var navPrev = $(".prev");
+
+// b1: tinh toan so luong anh
+
+var carouselInners = carouselInner.querySelectorAll(".item");
+
+if (carouselInners.lenght) {
+}

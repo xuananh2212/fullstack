@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+}
+
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.pots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pots .post-item {
+    flex-basis: calc(100% / 3 - 10px);
+    max-width: calc(100% / 3 - 10px);
+    border: 1px solid #ccc;
+    padding: 10px;
+}

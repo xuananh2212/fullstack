@@ -1,0 +1,248 @@
+h1:hover {
+    padding-left: 80px;
+    color: rgb(135, 106, 106);
+}
+
+h1 {
+    color: red;
+    transition: all .5s linear .5s;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.btn-4,
+.btn-3,
+.btn-2,
+.btn {
+    z-index: 2;
+    position: relative;
+    display: block;
+    margin: 30px auto;
+    background-color: green;
+    padding: 10px 30px;
+    border: none;
+    color: #131111;
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
+
+span {
+    position: relative;
+    z-index: 1;
+}
+
+.btn::before {
+    position: absolute;
+    left: 0;
+    width: 0;
+    bottom: 0;
+    top: 0;
+    content: "";
+    display: inline-block;
+    border-radius: 10px;
+    background-color: yellow;
+    transition: all 3.0s ease-out;
+}
+
+.btn:hover::before {
+    width: 100%;
+
+
+}
+
+.btn-2::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    background-color: yellow;
+    transition: width .5s linear;
+}
+
+.btn-2:hover::before {
+    width: 100%;
+
+}
+
+.btn-3::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* transform: translateX(-50%); */
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    background-color: yellow;
+    transition: all 1.0s linear;
+}
+
+.btn-3::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* transform: translateX(-50%); */
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    background-color: yellow;
+    transition: all 1.0s linear;
+}
+
+.btn-3:hover::before {
+    width: 50%;
+
+}
+
+.btn-3:hover::after {
+    width: 50%;
+
+}
+
+.box {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.inner {
+    position: relative;
+    z-index: 1;
+    transition: all .2s linear .2s;
+}
+
+.box::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: "";
+    display: inline-block;
+    height: 10px;
+    border-radius: 10px;
+    background-color: blue;
+    transition: all .2s linear;
+
+}
+
+.box:hover .inner {
+    color: #fff;
+
+}
+
+.box:hover::before {
+    height: 100%;
+}
+
+.img-wrap {
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px dotted #333;
+    transition: all 0.1s linear .2s;
+}
+
+.box:hover .img-wrap {
+    border-color: transparent;
+}
+
+
+.loading {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px dotted blue;
+    transition: all 0.1s linear;
+}
+
+.loading:hover {
+    transform: rotate(360deg);
+}
+
+
+.bg {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    border-radius: 99px;
+    border: 1px solid #cac7c7;
+    background-color: red;
+    transition: background-color 0.25s linear;
+}
+
+.lable-turn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 999px;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px #e6dddd;
+    transition: left .25s linear;
+}
+
+input:checked~.form-group .bg {
+    background-color: green;
+
+}
+
+input:checked~.form-group .lable-turn {
+    left: calc(100% - 50px)
+}
+
+.sale {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    color: #fff;
+    background-color: red;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto;
+}
+
+.sale::before {
+    position: absolute;
+    left: -60%;
+    content: "";
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, #fafafa 100%);
+    transform: skewX(24deg);
+    animation: move 5s infinite linear;
+}
+
+
+@keyframes move {
+    to {
+        left: 100%;
+    }
+
+}

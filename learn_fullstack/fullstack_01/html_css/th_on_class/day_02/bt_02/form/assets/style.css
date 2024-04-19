@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+
+#heading-lv1 {
+    color: yellow;
+}
+
+.heading-lv2 {
+    color: pink;
+}
+p {
+    color: blue;
+}
+
+.container-bottom h1{
+    color: aqua;
+}
+
+.containner-first h1 {
+    color: blue;
+}
+
+.container-first > .container-first__top > h1 {
+    color: bisque;
+}
+
+.list > li > a {
+    color: black;
+}
+
+h1.heading {
+    color: violet;
+}
+
+h2.heading{
+    color: bisque;
+}

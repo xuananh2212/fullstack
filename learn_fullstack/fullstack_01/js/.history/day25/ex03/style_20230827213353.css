@@ -1,0 +1,87 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+select,
+textarea {
+    background-color: transparent;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    min-height: 100vh;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel .carousel-inner {
+    display: flex;
+    width: 4800px;
+
+
+}
+
+.carousel .carousel-inner .item {
+    width: 1600px;
+}
+
+/* .carousel .carousel-inner .item:not(.active) {
+    display: none;
+} */
+
+.carousel .carousel-nav span {
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background: rgba(128, 128, 128, 0.613);
+    color: #fff;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel .carousel-nav span.prev {
+    left: 10px;
+}
+
+.carousel .carousel-nav span.next {
+    right: 10px;
+}

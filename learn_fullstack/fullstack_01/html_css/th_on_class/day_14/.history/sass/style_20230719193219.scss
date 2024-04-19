@@ -1,0 +1,11 @@
+$sizes: 0, 25, 50, 75, 100;
+
+@each $size in $sizes {
+  .w-#{size} {
+    @if ($size == 0) {
+      width: $size;
+    } @else {
+      width: $size * 1%;
+    }
+  }
+}

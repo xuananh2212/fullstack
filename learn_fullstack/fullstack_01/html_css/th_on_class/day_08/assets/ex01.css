@@ -1,0 +1,101 @@
+/* ul {
+    padding: 10px;
+    border: 1px solid #ccc;
+    /* list-style: none; 
+} 
+*/
+
+.container {
+    padding: 10px;
+    border: 2px solid #333;
+}
+
+.container h2 {
+    display: list-item;
+    list-style: inside decimal;
+}
+
+ul {
+    list-style: none;
+}
+
+
+ul.soical li a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul.soical li::before {
+    font-family: "fontawesome";
+}
+
+ul.soical .facebook::before {
+    content: "\f09a";
+}
+
+label {
+    position: relative;
+}
+
+
+label::before,
+label::after {
+    content: "";
+    display: inline-block;
+}
+
+label::before {
+    width: 10px;
+    height: 10px;
+    border: 3px solid green;
+    border-radius: 5px;
+}
+
+input:checked~label::after {
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    width: 15px;
+    height: 5px;
+    border-left: 3px solid green;
+    border-bottom: 3px solid green;
+    rotate: -45deg;
+}
+
+input:disabled~label::before {
+    border-color: #716b6bcf;
+}
+
+input:disabled~label::after {
+    border-color: #716b6bcf;
+}
+
+button {
+    margin-top: 18px;
+    outline: none;
+    border: none;
+    background: blue;
+    padding: 5px 20px;
+    border-radius: 3px;
+    color: #fff;
+
+}
+
+button {
+    position: relative;
+}
+
+button::before {
+    position: absolute;
+    content: ">";
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%);
+}
+
+button::after {
+    position: absolute;
+    content: ">";
+    top: 50%;
+    transform: translateY(-50%);
+}

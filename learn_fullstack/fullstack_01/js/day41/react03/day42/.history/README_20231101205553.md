@@ -1,0 +1,12 @@
+## Context api
+
+- tạo đối tượng context: React.createContent.
+- Provider : component có sẵn của context , dùng để gửi dữ liệu tới các Component con .
+- Comsumber: nhận dữ liệu từ provider (có thế sử dụng hook useContent)
+
+context nâng cao : xây dựng state manager kết hợp với useReducer
+
+.State:
+
+1. Local State -> State nội bộ trong 1 component
+2. Global State -> kho lưu trữ các State mà các Component có thể sử dụng.

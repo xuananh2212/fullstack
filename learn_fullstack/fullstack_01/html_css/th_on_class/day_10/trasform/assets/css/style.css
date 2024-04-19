@@ -1,0 +1,14 @@
+.box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    transition: all 0.5s linear;
+}
+
+.btn{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
